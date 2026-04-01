@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0">
             <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-gold shrink-0" />
             <div className="min-w-0">
-              <span className="text-base sm:text-xl font-heading font-bold text-primary-foreground tracking-wide block truncate">
+              <span className="text-base sm:text-xl font-heading font-bold text-white tracking-wide block truncate">
                 GLOBAL<span className="text-gold">EXIM</span>
               </span>
               <p className="text-[9px] sm:text-[10px] text-gold-light tracking-[0.15em] sm:tracking-[0.2em] uppercase">Import & Export</p>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
                   location.pathname === link.to
                     ? "text-gold bg-gold/10"
-                    : "text-primary-foreground/80 hover:text-gold hover:bg-gold/5"
+                    : "text-white/90 hover:text-gold hover:bg-gold/5"
                 }`}
               >
                 {link.label}
@@ -64,7 +64,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-primary-foreground p-2 -mr-2 tap-highlight-transparent"
+            className="lg:hidden text-white/90 p-2 -mr-2 tap-highlight-transparent"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -90,7 +90,7 @@ const Navbar = () => {
                   className={`px-4 py-3.5 text-base font-medium rounded-md transition-colors ${
                     location.pathname === link.to
                       ? "text-gold bg-gold/10"
-                      : "text-primary-foreground/80 active:bg-gold/5"
+                      : "text-white/90 hover:text-gold active:bg-gold/5"
                   }`}
                 >
                   {link.label}
